@@ -11,7 +11,7 @@ def time_conversion(s):
         return(str(0)+str(hour)+s[2:8])
 
 if __name__ =="__main__":
-    print("Enter the time: (HH:MM:SS PM or HH:MM:SS AM") #Here the last two characters of the string denotes AM or PM"
+    print("Enter the time: (HH:MM:SS PM or HH:MM:SS AM)") #Here the last two characters of the string denotes AM or PM"
     s = input()
     result = time_conversion(s)
     print("Converted Time: ",result)
