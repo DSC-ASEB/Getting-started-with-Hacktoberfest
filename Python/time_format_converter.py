@@ -13,5 +13,4 @@ def time_conversion(s):
 if __name__ =="__main__":
     print("Enter the time: (HH:MM:SS PM or HH:MM:SS AM)") #Here the last two characters of the string denotes AM or PM"
     s = input()
-    result = time_conversion(s)
-    print("Converted Time: ",result)
+    print("Converted Time: ", time_conversion(s))
