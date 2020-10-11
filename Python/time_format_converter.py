@@ -24,7 +24,7 @@ def validate(s):
     if flag == True:
         flag = False
     else:
-        print("Invalid Input.Enter the value again!")
+        print("Invalid Input. Please enter in correct format!")
     return False
     
 if __name__ =="__main__":
