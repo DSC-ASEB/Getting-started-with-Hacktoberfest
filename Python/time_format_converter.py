@@ -1,5 +1,4 @@
 def time_conversion(s):
-   
     hour=int(s[0]+s[1])
     if s[9] == "P":
         if hour<12:
