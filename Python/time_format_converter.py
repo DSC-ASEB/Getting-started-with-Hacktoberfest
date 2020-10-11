@@ -9,6 +9,7 @@ def time_conversion(s):
         if hour == 12:
             hour=00
         return(str(0)+str(hour)+s[2:8])
+
 flag = True
    
 def validate(s):
