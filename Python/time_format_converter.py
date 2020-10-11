@@ -31,5 +31,4 @@ if __name__ =="__main__":
     print("Enter the time: (HH:MM:SS PM or HH:MM:SS AM)")
     while not validate(s):
         s = str(input())
-        
     print("Converted Time:", time_conversion(s))
