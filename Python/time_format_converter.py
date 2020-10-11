@@ -32,4 +32,4 @@ if __name__ =="__main__":
     while not validate(s):
         s = str(input())
         
-    print("Converted Time: ", time_conversion(s))
+    print("Converted Time:", time_conversion(s))
