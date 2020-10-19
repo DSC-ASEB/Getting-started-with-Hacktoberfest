@@ -4,7 +4,7 @@ def time_conversion(s):
         if hour<12:
             hour+=12
         return(str(hour)+s[2:8])
-    elif s[9] == "A":
+    if s[9] == "A":
         if hour == 12:
             hour=00
         return(str(0)+str(hour)+s[2:8])
@@ -20,7 +20,7 @@ def validate(s):
                     if int(s[3:5]) >=0 and int(s[3:5]) < 60:
                         if int(s[6:8]) >= 0 and int(s[6:8]) < 60:
                             return True
-    if flag == True:
+    if flag :
         flag = False
     else:
         print("Invalid Input. Please enter in correct format!")
