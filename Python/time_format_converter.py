@@ -1,5 +1,5 @@
 def time_conversion(s):
-    hour=int(s[0])+int(s[1])
+    hour=int(s[0]+s[1])
     if s[9] == "P":
         if hour<12:
             hour+=12
@@ -16,7 +16,7 @@ def validate(s):
     if len(s) == 11:
         if s[10] == 'M' and (s[9] == 'A' or s[9] == 'P'):
             if s[2] == ':' and s[5] == ':' and s[8] == ' ':
-                if int(s[0:2]) >=0 and int(s[0:2]) <= 12:
+                if int(s[0:2]) >0 and int(s[0:2]) <= 12:
                     if int(s[3:5]) >=0 and int(s[3:5]) < 60:
                         if int(s[6:8]) >= 0 and int(s[6:8]) < 60:
                             return True
