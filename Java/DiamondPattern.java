@@ -1,30 +1,36 @@
-import java.util.*;
+import java.util.Scanner;
+import static java.lang.System.exit;
 
- class DiamondPattern {
-    public static void main(String args[]) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the number of rows");
-        int row_number = scanner.nextInt();
-        int space= row_number/2;
-        int spacecount= 1;
-        int row = 1;
-        while(row<=row_number){
-            for (int i = 1; i <= space; i++) {
-                System.out.print(" ");
-            }
-            for (int j = 1; j <= spacecount ; j++) {
-                System.out.print("*");
-            }
-            System.out.print("\n");
-            if(row <=row_number/2){
-                space--;
-                spacecount=spacecount+2;
+public class DiamondPattern {
+  public static void main(String[] args) {
+   int row ;
+   int i =0 , j = 0 ;
+   Scanner in = new Scanner(System.in);
+   for (;;) {
+    System.out.print("Enter rows for half of the diamond : ");     
+		   row = in.nextInt();
+		    if (row >= 1) {
+   for(i=0;i<=row;i++)
+   {
+     for(j=1;j<=row-i;j++)
+     System.out.print(" ");
+     for(j=1;j<=2*i-1;j++)
+       System.out.print("*");
+     System.out.print("\n");
+   }
+ 
+   for(i=row-1;i>=1;i--)
+   {
+     for(j=1;j<=row-i;j++)
+     System.out.print(" ");
+     for(j=1;j<=2*i-1;j++)
+       System.out.print("*");
+     System.out.print("\n");
+   }
             }else{
-                space++;
-                spacecount =spacecount-2;
+         System.out.println("Wrong Input");
+                exit(1);
             }
-
-            row++;
-        }
-    }
+}
+}
 }
