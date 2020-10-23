@@ -1,15 +1,17 @@
 import java.util.Scanner;
-import static java.lang.System.exit;
+import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String[] args) {
         int row;
         int i = 0, j = 0;
-        Scanner in = new Scanner(System.in);
-        for (;;) {
-            System.out.print("Enter rows for half of the diamond : ");
-            row = in .nextInt();
-            if (row >= 1) {
+        boolean error = false;
+        do {
+            try {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Enter rows for half of the diamond: ");
+                row = in .nextInt();
+                error = false;
                 for (i = 0; i <= row; i++) {
                     for (j = 1; j <= row - i; j++)
                         System.out.print(" ");
@@ -17,7 +19,6 @@ public class Main {
                         System.out.print("*");
                     System.out.print("\n");
                 }
-
                 for (i = row - 1; i >= 1; i--) {
                     for (j = 1; j <= row - i; j++)
                         System.out.print(" ");
@@ -25,10 +26,11 @@ public class Main {
                         System.out.print("*");
                     System.out.print("\n");
                 }
-            } else {
-                System.out.println("Wrong Input");
-                exit(1);
+            } catch (InputMismatchException e) {
+                System.out.println("Not a valid input, please try again.");
+                error = true;
             }
         }
+        while (error);
     }
 }
