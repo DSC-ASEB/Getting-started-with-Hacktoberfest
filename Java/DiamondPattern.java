@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
-public class Main {
+public class DiamondPattern {
     public static void main(String[] args) {
         int row;
         int i = 0, j = 0;
