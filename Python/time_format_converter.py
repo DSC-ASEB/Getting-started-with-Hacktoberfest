@@ -9,7 +9,7 @@ def time_conversion(s):
             hour=00
         if hour > 9 and hour < 12:
             return(str(hour)+s[2:8])
-        else:
+        if hour > 0 and hour < 10:
             return (str(0) + str(hour)+s[2:8])
 
 
