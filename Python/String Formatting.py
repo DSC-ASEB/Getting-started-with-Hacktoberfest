@@ -18,18 +18,3 @@ def print_formatted(n):
 if __name__ == '__main__':
     n = 10 # int(input()) # let n=10
     print_formatted(n)
-    
-    
-"""
-Output:
-   1    1    1    1
-   2    2    2   10
-   3    3    3   11
-   4    4    4  100
-   5    5    5  101
-   6    6    6  110
-   7    7    7  111
-   8   10    8 1000
-   9   11    9 1001
-  10   12    A 1010
-"""
