@@ -85,7 +85,7 @@ Traverse()
      printf(" DEQUEUED ELEMENT %d \n",x);
      x=DeQueue();
      printf(" DEQUEUED ELEMENT%d\n",x);
-    printf(" ELEMENT LEFT IN QUEUE %d\n",x);
+    printf(" ELEMENT LEFT IN QUEUE \n",x);
 
       Traverse();
  }
