@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-int maxheapfy (int a[], int);
-int adjust (int a[], int i, int n);
-int heapsort (int a[], int n);
-int exchange (int * , int * );
+int maxheapfy(int a[], int);
+int adjust(int a[], int i, int n);
+int heapsort(int a[], int n);
+int exchange(int * , int * );
 
-int exchange (int * p, int * q) {
+int exchange(int * p, int * q) {
     int temp;
     temp = * p;
     * p = * q;
     * q = temp;
 }
 
-int heapsort (int a[], int n) {
+int heapsort(int a[], int n) {
     int j, i;
     maxheapfy(a, n); {
         for (j = n; j >= 2; j--) {
@@ -22,7 +22,7 @@ int heapsort (int a[], int n) {
     }
 }
 
-int adjust (int a[], int i, int n) {
+int adjust(int a[], int i, int n) {
     int j;
     while (2 * i <= n) {
         j = 2 * i;
