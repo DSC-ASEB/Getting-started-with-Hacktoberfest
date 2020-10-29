@@ -11,10 +11,9 @@ def print_formatted(n):
         h=str(hex(i))
         b=str(bin(i))
         j=str(i)
-        print(j.rjust(width),o[2:].rjust(width),h[2:].upper().rjust(width),b[2:].rjust(width))
-        #print("{:2} {:2} {:2} {:2}".format(j,o[2:],h[2:].upper(),b[2:]))
+        print("{:2} {:2} {:2} {:2}".format(j,o[2:],h[2:].upper(),b[2:]))
 
 
 if __name__ == '__main__':
-    n = 10 # int(input()) # let n=10
+    n = 10
     print_formatted(n)
