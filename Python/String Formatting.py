@@ -5,7 +5,6 @@
 
 def print_formatted(n):
 
-    width = len(bin(n)[2:])
     for i in range(1,n+1):
         o=str(oct(i))
         h=str(hex(i))
